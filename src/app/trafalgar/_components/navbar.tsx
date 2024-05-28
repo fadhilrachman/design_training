@@ -24,7 +24,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className=" flex items-center justify-between">
+    <div className=" px-32 flex py-4 items-center justify-between fixed  w-full ">
       <div className="flex items-center space-x-2">
         <div className="h-8 w-8 bg-blue-400 rounded-full flex items-center justify-center font-bold text-white">
           T
@@ -38,7 +38,7 @@ const Navbar = () => {
               href=""
               key={key}
               className={`${
-                val.label == "Home" ? "font-semibold" : "text-gray-500"
+                val.label == "Home" ? "font-semibold" : "text-placeholder"
               }`}
             >
               {val.label}
